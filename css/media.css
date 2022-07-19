@@ -1,0 +1,10 @@
+@media only screen and (max-width:688px) {
+    .header-content{
+        margin: 1rem;
+        flex-direction: column;
+    }
+    .header-text-box{
+        width: 100%;   
+    }  
+    
+}
