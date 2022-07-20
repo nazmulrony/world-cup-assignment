@@ -29,7 +29,7 @@ header section styling
     margin-bottom: .5rem;
 
 }
-.header-text-box p{
+.header-text{
     font-size: .9rem;
     font-weight: 300;
 }
@@ -76,7 +76,7 @@ header section styling
  .section-blog{
    display: grid;
    grid-template-columns: 255px 1fr;
-   column-gap: 1rem;
+   gap: 1rem;
     margin: 6rem 6rem;
  }
 .link-container{
@@ -90,7 +90,7 @@ header section styling
 }
 
 .btn-menu-link{
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-weight: 500;
     margin: .8rem 0;
@@ -157,6 +157,9 @@ header section styling
 .icon-text{
     margin-left: .5rem;
 }
+.hidden{
+    display: none;
+}
 
 /******************
  footer-style 
@@ -186,7 +189,7 @@ header section styling
     justify-content: center;
  }
  .footer-list-item{
-    margin:0 1.5rem ;
+    margin:.5rem 1.5rem ;
     font-size: .8rem;
     background-color: rgb(4, 1, 32);
     transition: all .2s;
