@@ -277,9 +277,11 @@ header section styling
     .header-text p{
         font-size: 1.1rem;
         width: 100%;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
     .header-image{
         width: 80%;
@@ -314,6 +316,15 @@ Tablet-Screen Medai query
     .heading-primary{
         font-size: 2rem;
     } 
+    .header-text p{
+        font-size: 1.1rem;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
     .section-menu{
         grid-template-columns:1fr;
         margin: 2rem;
