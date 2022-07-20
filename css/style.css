@@ -48,6 +48,7 @@ header section styling
 .btn-white{
     background-color: #ffffff;
     color: black;
+    border: 1px solid #E8E8E8;
 }
 .btn-red{
     background-color:rgb(248, 60, 60);
@@ -56,6 +57,7 @@ header section styling
 .btn-blue{
     background-color:#0078AA;
     color: white;
+   
 }
 .btn-link:hover{
     transform: translateY(-3px) scale(1.1);
@@ -73,14 +75,14 @@ header section styling
  blog-section styling 
  **********************/
 
- .section-blog{
+ .section-menu{
    display: grid;
    grid-template-columns: 255px 1fr;
    gap: 1rem;
-    margin: 6rem 6rem;
+   margin: 6rem 6rem;
  }
 .link-container{
-    background-image:linear-gradient(to right bottom, rgb(65, 64, 64), rgb(0, 0, 0)); 
+    background-image:linear-gradient(to right bottom, rgb(87, 87, 87), rgb(0, 0, 0)); 
     padding:1.5rem;
     display: flex;
     flex-direction: column;
@@ -109,14 +111,15 @@ header section styling
 /*********************
  Blogs card styling
  *********************/
- .blogs{
+ .blogs, .matches{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
  }
- .blog{
+ .blog, .match{
     border-radius: 10px;
-    box-shadow: 0 1rem 1rem rgb(0, 0, 0, .2);
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
     overflow: hidden;
  }
  .blog-banner{
@@ -161,6 +164,28 @@ header section styling
     display: none;
 }
 
+/**********************
+ Macthes-card-styling 
+ ***********************/
+ .match-flags{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin:2rem 1rem;
+ }
+ .flag-image{
+    width: 100%;
+ }
+ .match-info{
+    margin: 0 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+ }
+.match-time{
+    font-size: .8rem;
+    margin-top: .8rem;
+    color: #777;
+}
 /******************
  footer-style 
  *******************/
@@ -221,6 +246,95 @@ header section styling
 .footer-list-item:hover,
 .link-box:hover{
     transform: translateY(-3px) scale(1.1);
+}
+
+
+/******************************
+ Mobile-sceren Meida query
+ ************************* */
+ @media only screen and (max-width:688px) {
+    .header-content{
+        margin: 1rem;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .header-text-box{
+        width: 100%; 
+        text-align: center;
+        padding-bottom: 0;
+    
+    }
+    .header-image-box{
+        width: 100%; 
+        text-align: center;
+      
+    }
+    .heading-primary{
+        text-align: center;
+        font-size: 1.7rem;
+    }  
+
+    .header-text p{
+        font-size: 1.1rem;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .header-image{
+        width: 80%;
+    }
+
+    .section-menu{
+        grid-template-columns:1fr;
+        margin: 1rem;
+        justify-items: center;
+    }
+    .link-container{
+        background-image: none;
+    }
+    .blogs .matches{
+        grid-template-columns: 1fr;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+}
+
+/* ************************
+Tablet-Screen Medai query
+***************************/
+@media only screen and (min-width:689px) and (max-width:992px){
+    .header-content{
+        margin: 2rem;
+        border-radius: 10px;
+    }
+
+    .heading-primary{
+        font-size: 2rem;
+    } 
+    .section-menu{
+        grid-template-columns:1fr;
+        margin: 2rem;
+        justify-items: center;
+    } 
+    .link-container{
+        background-image: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+    .blogs, .matches{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+    }
+    .hidden{
+        display: block;
+    }
 }
 
 
