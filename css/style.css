@@ -295,6 +295,7 @@ header section styling
     }
     .blogs, .matches{
         grid-template-columns: 1fr;
+        width: 100%;
     }
     .footer-list{
         flex-direction: column;
@@ -328,6 +329,7 @@ Tablet-Screen Medai query
     }
     .blogs, .matches{ 
         grid-template-columns: 1fr 1fr;
+        width: 100%;
     }
     .footer-list{
         flex-wrap: wrap;
